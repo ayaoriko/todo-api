@@ -12,7 +12,7 @@ class CategoryController extends Controller
     // カテゴリーの一覧取得
     public function index()
     {
-        $categories = Category::all()->index();
+        $categories = Category::all();
         return response()->json($categories);
     }
 
